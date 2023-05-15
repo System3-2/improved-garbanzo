@@ -16,7 +16,17 @@ export class AppController {
   @Get('login')
   @Render('login')
   login() {
-    return {}
+    return {
+      title: 'Login'
+    }
+  }
+
+  @Get('signup')
+  @Render('login')
+  signup() {
+    return {
+      title: 'Signup'
+    }
   }
 
 }
