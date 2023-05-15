@@ -13,12 +13,4 @@ export class AppController {
     }
   }
 
-  @Get('*')
-  @Render('404')
-  notFound() {
-    return {
-      message: 'Oops not found',
-      title: '404'
-    }
-  }
 }

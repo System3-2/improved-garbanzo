@@ -15,4 +15,9 @@ export class AuthController {
   googleAuthRedirect(@Req() req) {
     return this.appService.googleLogin(req)
   }
+
+  @Get('test')
+  test() {
+    return 'testing'
+  }
 }
